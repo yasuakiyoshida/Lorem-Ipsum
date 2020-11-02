@@ -194,3 +194,67 @@ header {
 .strength-text {
   text-align: left; /* .strengthのプロパティで中央寄せになっているので左寄せに戻す */
 }
+
+/* Profile */
+.profile {
+  width: 100%;
+  background-color: #ECEFF1;
+}
+
+.profile-content {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.profile-title {
+  padding-top: 90px;
+  text-align: center;
+  font-size: 32px;
+  color: #000;
+}
+
+.profile-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  margin: 8px auto 0 auto;
+  border-bottom: 3px solid #EC715F;
+}
+
+.profile-text {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+}
+
+.profile-bottom {
+  display: flex;
+}
+
+.profile-box {
+  width: 512px;
+  margin-bottom: 90px;
+}
+
+.profile-image {
+  border-radius: 50%; /* 画像の角丸半径を50%にする（=円形にする） */
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  background-image: url(img/my-icon.jpg);
+}
+
+.profile-item:last-child {
+  padding-top: 20px;
+}
+
+.profile-item-title {
+  font-size: 20px;
+}
+
+.profile-item-text {
+  font-size: 16px;
+  color: #000;
+  padding-top: 5px;
+}
