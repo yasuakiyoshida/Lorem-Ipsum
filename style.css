@@ -14,16 +14,20 @@ header {
 .heading {
   width: 1024px;
   margin: 0 auto;
+  display: flex;
+}
+
+.header-nav {
+  margin-right: auto; /* ナビゲーション右寄せ */
 }
 
 .header-logo {
   height: 70px; /* ロゴのサイズを合わせる */
-  float: left; /* ロゴを左端に+横並び */
 }
 
 .nav-list {
   line-height: 70px;
-  float: right; /* ナビを右端に+横並び */
+  display: flex;
 }
 
 .nav-item {
@@ -31,7 +35,6 @@ header {
   list-style: none;
   font-size: 16px;
   color: #FAFAFA;
-  float: left; /* nav-listのfloat: rightで右端になったことでnav-itemが見切れるため左端に */
 }
 
 /* メインビジュアル */
@@ -292,33 +295,31 @@ header {
 }
 
 .contact-bottom {
-  width: 400px;
+  display: flex;
 }
 
 .contact-left {
-  width: 400px;
+  width: 50%;
   margin-bottom: 90px;
-  float: left;
 }
 
 .contact-right {
-  width: 400px;
+  width: 50%;
   margin-bottom: 90px;
-  float: right;
 }
 
 .contact-left-item,
-.contact-right-item {
+.contact-right-item { /* widthを半分にして中央寄せ　*/
   width: 50%;
   margin: 0 auto;
 }
 
-.contact-left-item {
+.contact-left-item { /* 一番横幅のあるTelの番号にwidthを合わせる　*/
   width: 130px;
 }
 
-.contact-right-item {
-  width: 180px;
+.contact-right-item { /* アイコンサイズ×3 + marginにwidthを合わせる */
+  width: 178px;
 }
 
 .contact-item-title {
@@ -331,7 +332,7 @@ header {
 }
 
 .contact-item-text {
-  text-decoration:underline;
+  text-decoration:underline; /* 下線追加 */
 }
 
 .contact-right-item .fa {
@@ -340,4 +341,18 @@ header {
 
 .fa-twitter {
   margin: 0 20px;
+}
+
+/* フッター */
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: #EC715F;
+}
+
+.footer-text {
+  font-size: 16px;
+  text-align: center;
+  line-height: 60px;
+  color: #FAFAFA;
 }
