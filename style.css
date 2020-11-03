@@ -181,7 +181,7 @@ header {
   margin: 0 10px 90px 10px;
 }
 
-.fa {
+.strength .fa {
   font-size: 60px;
 }
 
@@ -257,4 +257,87 @@ header {
   font-size: 16px;
   color: #000;
   padding-top: 5px;
+}
+
+/* Contact */
+.contact {
+  width: 100%;
+}
+
+.contact-content {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  padding-top: 90px;
+  text-align: center;
+  font-size: 32px;
+  color: #000;
+}
+
+.contact-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  margin: 8px auto 0 auto;
+  border-bottom: 3px solid #EC715F;
+}
+
+.contact-text {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+}
+
+.contact-bottom {
+  width: 400px;
+}
+
+.contact-left {
+  width: 400px;
+  margin-bottom: 90px;
+  float: left;
+}
+
+.contact-right {
+  width: 400px;
+  margin-bottom: 90px;
+  float: right;
+}
+
+.contact-left-item,
+.contact-right-item {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact-left-item {
+  width: 130px;
+}
+
+.contact-right-item {
+  width: 180px;
+}
+
+.contact-item-title {
+  font-size: 20px;
+  margin: 20px 0 5px 0;
+}
+
+.contact-item-title:first-child {
+  margin-top: 0;
+}
+
+.contact-item-text {
+  text-decoration:underline;
+}
+
+.contact-right-item .fa {
+  font-size: 50px;
+}
+
+.fa-twitter {
+  margin: 0 20px;
 }
